@@ -2,6 +2,9 @@
     box-sizing: border-box;
  }
 
+ *:focus {
+    outline: 0 !important;
+}
  .container-fluid .head{
      padding-top: 1rem;
      color: white;
@@ -39,15 +42,13 @@
 
  .carousel-item img{
    height: 40rem;
-} 
-
-
+}
 .herbs{
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
- @media (max-width:500px) {
+ @media (max-width:900px) {
      .navbar-light .navbar-nav .nav-link{
          padding: 0.7rem 0.1rem 0.7rem 0.1rem;
          color: white; 
@@ -55,5 +56,10 @@
      .carousel-item img{
         height: 20rem;
      }
-     
+
+ }
+ @media (max-width:400px){
+    .container-fluid .head{
+        font-size: 1.5rem;
+    }   
  }
