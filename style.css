@@ -1,10 +1,19 @@
 *{
     box-sizing: border-box;
  }
- 
+
+ *:focus {
+    outline: 0 !important;
+}
+ .container-fluid .head{
+     padding-top: 1rem;
+     color: white;
+     font-family: 'Ubuntu';
+     font-weight: 700;
+     font-size: 2rem;
+ }
  .nav{
    background-color: rgb(55, 107, 3);
-  
  }
  .navbar-light .navbar-nav .nav-link{
      padding: 0.5rem 1rem 0.5rem 1rem;
@@ -15,16 +24,42 @@
  .navbar-light .navbar-nav .nav-link:hover{
      background-color:rgb(228, 228, 94);
  }
- 
-.carousel-item img{
-   height: 44rem;
+ .navbar-nav li{
+     margin-left: 10px;
+     margin-right: 10px;
+ } 
+ .herbs{
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+ }
+
+
+ .herbs .head{
+     overflow-y: hidden;
+     text-align: center;
+     text-decoration: underline;
+ }
+
+ .carousel-item img{
+   height: 40rem;
+}
+.herbs{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
- @media (max-width:500px) {
+ @media (max-width:900px) {
      .navbar-light .navbar-nav .nav-link{
          padding: 0.7rem 0.1rem 0.7rem 0.1rem;
-         color: white;
-         
+         color: white; 
      }   
-     
+     .carousel-item img{
+        height: 20rem;
+     }
+
+ }
+ @media (max-width:400px){
+    .container-fluid .head{
+        font-size: 1.2rem;
+    }   
  }
