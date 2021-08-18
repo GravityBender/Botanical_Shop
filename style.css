@@ -48,6 +48,10 @@
     padding-right: 1rem;
 }
 
+.bg-primary{
+    background-color: #0f5132 !important; 
+}
+
  @media (max-width:900px) {
      .navbar-light .navbar-nav .nav-link{
          padding: 0.7rem 0.1rem 0.7rem 0.1rem;
