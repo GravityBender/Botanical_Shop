@@ -5,6 +5,11 @@
  *:focus {
     outline: 0 !important;
 }
+
+body{
+    background-color:rgb(164, 235, 94);
+}
+
  .container-fluid .head{
      padding-top: 1rem;
      color: white;
@@ -29,10 +34,9 @@
      margin-right: 10px;
  } 
  .herbs{
-     margin-top: 2rem;
-     margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
  }
-
 
  .herbs .head{
      overflow-y: hidden;
@@ -40,6 +44,9 @@
      text-decoration: underline;
  }
 
+.row{
+    z-index: 100;
+}
  .carousel-item img{
    height: 40rem;
 }
@@ -47,6 +54,58 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.medcontainer {
+    position: relative;
+    font-family: Arial;
+    z-index: 100;
+  }
+
+.medcontainer img{
+    filter: blur(2px);
+}
+  
+.medtext-block {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    background-color: rgba(22, 21, 21, 0.315);
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 150;
+  }
+
+.medtext-block a{
+    text-decoration: none;
+    color: white;
+  }
+
+.ornacontainer {
+    position: relative;
+    font-family: Arial;
+    z-index: 100;
+  }
+
+.ornacontainer img{
+    filter: blur(2px);
+}
+  
+.ornatext-block {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    background-color: rgba(22, 21, 21, 0.315);
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 150;
+  }
+
+.ornatext-block a{
+    text-decoration: none;
+    color: white;
+  }
 
 .bg-primary{
     background-color: #0f5132 !important; 
