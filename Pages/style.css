@@ -7,7 +7,21 @@
 }
 
 body{
-    background-color:rgb(164, 235, 94);
+    background-image: linear-gradient(to left top, rgb(157, 219, 200), rgb(108, 133, 95));
+    background-color: initial;
+    
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../images/logo.png') center no-repeat rgb(166, 250, 218);
 }
 
  .container-fluid .head{
@@ -26,6 +40,31 @@ body{
      text-align: center;
      border-radius: 1rem;
  }
+
+ .dropdown-menu.show {
+    display: block;
+    border-style: none;
+    background-color:rgb(55, 107, 3);
+}
+
+
+.dropdown-item{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: white;
+}
+
+.dropdown-item:hover{
+    background-color: rgb(228, 228, 94);
+    border-radius: 5px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(228, 228, 94);
+    border-radius: 5px;
+}
+
  .navbar-light .navbar-nav .nav-link:hover{
      background-color:rgb(228, 228, 94);
  }
@@ -34,7 +73,7 @@ body{
      margin-right: 10px;
  } 
 
- .gradient-custom {
+.gradient-custom {
     background: #a18cd1;
 
     background: -webkit-linear-gradient(45deg,
@@ -44,7 +83,7 @@ body{
     background: linear-gradient(45deg,
         rgba(101, 230, 169, 0.6),
         rgba(68, 233, 156, 0.6) 100%);
-  }
+}
  
 .bg-primary{
     background-color: #0f5132 !important; 
