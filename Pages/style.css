@@ -6,11 +6,7 @@
     outline: 0 !important;
 }
 
-body{
-    background-image: linear-gradient(to left top, rgb(157, 219, 200), rgb(108, 133, 95));
-    background-color: initial;
-    
-}
+
 
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
@@ -77,23 +73,23 @@ body{
     background: linear-gradient(
             45deg
             , black, transparent);
-    z-index: -2;
+    z-index: -4;
 }
 
 .bg-image{
     background: linear-gradient(45deg, rgb(0, 0, 0), #60d47d87), url('https://www.shtfpreparedness.com/wp-content/uploads/2018/03/SHTF-Plant-Your-Own-Meds-fb.jpg'), no-repeat;
     height: 100vh;
     width: 100%;
-    z-index: -1;
+    z-index: -2;
 }
 
 .mb-0{
-    z-index: 100;
+    z-index: 200;
     text-align: center;
 }
 
 .container{
-    z-index: 200;
+    z-index: 500;
 }
 
 .bg-primary{
