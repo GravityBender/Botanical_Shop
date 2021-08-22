@@ -58,11 +58,20 @@ body{
 
 .navbar-light .navbar-nav .nav-link:hover{
      background-color:rgba(138, 245, 31, 0.507);
+     color: white;
  }
+
  .navbar-nav li{
      margin-left: 10px;
      margin-right: 10px;
  } 
+
+ @media(min-width:900px){
+     .gap{
+         margin-left: 35%;
+     }
+ }
+
  .herbs{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -73,6 +82,32 @@ body{
      text-align: center;
      text-decoration: underline;
  }
+
+ .head1 {
+    overflow: hidden;
+    text-align: center;
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.head1:before,
+.head1:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.head1:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.head1:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
 
 .row{
     z-index: 100;
@@ -92,10 +127,22 @@ body{
     box-shadow: 5px 4px rgba(37, 95, 23, 0.575);
 }
 
+.card-btn{
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.card-btn button{
+    width: 8em;
+}
+
 .medcontainer {
     position: relative;
     font-family: Arial;
     z-index: 100;
+    padding: 20px;
   }
 
 .medcontainer img{
@@ -103,13 +150,13 @@ body{
 }
   
 .medtext-block {
+    text-align: center;
     position: absolute;
     bottom: 40px;
-    right: 20px;
+    right: 30px;
     background-color: rgba(22, 21, 21, 0.315);
     font-size: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px;
     z-index: 150;
   }
 
@@ -122,6 +169,7 @@ body{
     position: relative;
     font-family: Arial;
     z-index: 100;
+    padding: 20px;
   }
 
 .ornacontainer img{
@@ -131,11 +179,11 @@ body{
 .ornatext-block {
     position: absolute;
     bottom: 40px;
-    right: 20px;
+    right: 30px;
     background-color: rgba(22, 21, 21, 0.315);
     font-size: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px;
+    text-align: center;
     z-index: 150;
   }
 
@@ -156,6 +204,11 @@ body{
      .carousel-item img{
         height: 20rem;
      }
+    .medtext-block, .ornatext-block{
+        margin: auto;
+        width: 80%;
+    }
+     
 
  }
  @media (max-width:400px){
