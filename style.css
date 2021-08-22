@@ -58,6 +58,7 @@ body{
 
 .navbar-light .navbar-nav .nav-link:hover{
      background-color:rgba(138, 245, 31, 0.507);
+     color: white;
  }
 
  .navbar-nav li{
