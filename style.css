@@ -63,6 +63,13 @@ body{
      margin-left: 10px;
      margin-right: 10px;
  } 
+
+ @media(min-width:900px){
+     .gap{
+         margin-left: 35%;
+     }
+ }
+
  .herbs{
     margin-top: 2rem;
     margin-bottom: 2rem;
